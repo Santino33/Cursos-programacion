@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cajero Automatico</title>
+  </head>
+
+  <style>
+   body
+   {
+     background-color: #edf2f4;
+   }
+   h1
+   {
+     font-style: monospace ;
+     color: #2b2d42
+   }
+   .boton
+   {
+
+     text-align: center;
+     width: 150px;
+     height: 60px;
+     font-family: monospace;
+     color: #edf2f4;
+     font-size: 24px;
+     background-color: #d90429;
+   }
+   .boton2
+   {
+
+     text-align: center;
+     width: 150px;
+     height: 60px;
+     font-family: monospace;
+     color: #edf2f4;
+     font-size: 24px;
+     background-color: #317b22;
+   }
+   .texto
+   {
+     color: #2b2d42;
+     text-align: center;
+     font-size: 18px;
+     font-style: monospace;
+   }
+   .imagen
+   {
+     text-align: center;
+     height: 150px;
+   }
+   img
+   {
+     width: auto;
+     max-height: 100%;
+   }
+  </style>
+
+  <body>
+    <div class="imagen">
+    <img src="santander.png">
+
+  </p>
+    <p>
+    <div class="texto">
+      <strong><h1>Ingrese el monto deseado</h1></strong>
+    <p>
+    <input type="number" id="dinero" /><br>
+    <br><input type="button" value="Extraer" class="boton" id="extraer"/>
+    <br><input type="button" value="Limpiar" class="boton2" id="limpiar"/>
+    </p>
+  </div>
+    <div class="texto">
+    <p id="resultado" ></p>
+    <script src="cajero.js"></script>
+  </div>
+  </body>
+</html>
