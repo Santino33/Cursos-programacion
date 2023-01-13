@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="area:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/area_jar</output-path>
+    <root id="archive" name="area.jar">
+      <element id="module-output" name="area" />
+    </root>
+  </artifact>
+</component>
