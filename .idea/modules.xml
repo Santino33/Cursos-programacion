@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/Curso_java.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/Curso_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OpenBootcamp/Curso_javaBasico/Curso_javaBasico.iml" filepath="$PROJECT_DIR$/OpenBootcamp/Curso_javaBasico/Curso_javaBasico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/DoctorInfo/DoctorInfo.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/DoctorInfo/DoctorInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/FiguresShape/FiguresShape.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/FiguresShape/FiguresShape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/FootballTeam/FootballTeam.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/FootballTeam/FootballTeam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OpenBootcamp/OpenBootcamp.iml" filepath="$PROJECT_DIR$/OpenBootcamp/OpenBootcamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/Patient/Patient.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/Patient/Patient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/PolygonArea/PolygonArea.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/PolygonArea/PolygonArea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programacion.iml" filepath="$PROJECT_DIR$/Programacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/ProyectAppointments/ProyectAppointments.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/ProyectAppointments/ProyectAppointments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/enum/enum.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/enum/enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/internClass/internClass.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/internClass/internClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Platzi/Curso_java/untitled/untitled.iml" filepath="$PROJECT_DIR$/Platzi/Curso_java/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
