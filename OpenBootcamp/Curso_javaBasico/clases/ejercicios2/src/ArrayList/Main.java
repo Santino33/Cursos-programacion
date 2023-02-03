@@ -31,21 +31,7 @@ public class Main {
 
         }
         ArrayList<Integer> elementosEliminar = new ArrayList();
-
-        for (int i = 0; miArray.size()-1>=i; i++){
-            if ((miArray.get(i) % 1)==0) {
-                elementosEliminar.ensureCapacity(20);
-                    elementosEliminar.add(i);
-                    System.out.println("a");
-              }
-
-        }
-        for(int elemento : elementosEliminar) {
-            System.out.println("oo");
-            miArray.remove(elemento);
-            System.out.println(miArray);
-        }
-
-        System.out.println("dd");
+        miArray.removeIf(numero -> numero % 2 == 0);
+        System.out.println(miArray);
     }
 }
