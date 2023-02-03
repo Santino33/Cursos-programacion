@@ -8,6 +8,7 @@ public class Main {
     public static void main (String []args){
         //procedimiento();
         llenarBase();
+        agregarUsuario();
     }
 
     public static void procedimiento(){
@@ -55,25 +56,47 @@ public class Main {
         }
     }
 
-    public static void agregarUsuario(HashMap<String, Integer> mapa){
-        String nombre;
-        int valor;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Escriba el nombre del nuevo usuario");
-        nombre = scanner.next();
-        System.out.println("Escriba el valor del nuevo usuario "+nombre);
-        valor = scanner.nextInt();
-
+    public static void agregarUsuario(){
         try {
-            FileInputStream in = new FileInputStream("C:/Users/willi/Programacion/OpenBootcamp/Curso_javaBasico/clases/ejercicios2/src/consulta/basededatos.txt");
-            ObjectInputStream ois = new ObjectInputStream(in);
-            HashMap baserecuperada = (HashMap) ois.readObject();
+            boolean salida = false;
+            Scanner scanner = new Scanner(System.in);
+            String nombre;
+            int valor;
+            char respuesta;
+            do {
+                System.out.println("Escriba el nombre del nuevo usuario");
+                nombre = scanner.next();
+                System.out.println("Escriba el valor del nuevo usuario "+nombre);
+                valor = scanner.nextInt();
+                FileInputStream in = new FileInputStream("C:/Users/willi/Programacion/OpenBootcamp/Curso_javaBasico/clases/ejercicios2/src/consulta/basededatos.txt");
+                ObjectInputStream ois = new ObjectInputStream(in);
+                HashMap baserecuperada = (HashMap) ois.readObject();
+                baserecuperada.put(nombre, valor);
+
+                System.out.println("¿Desea agregar otro usuario?\n Escriba S/N");
+                respuesta = scanner.next().charAt(0);
+                switch (respuesta){
+                    case 'S': salida = false;
+                        break;
+                    case 's': salida = false;
+                        break;
+                    case 'N': salida = true;
+                        break;
+                    case 'n': salida = true;
+                        break;
+                }
+            }while(salida = false);
+
         }catch(IOException e){
             System.out.println("Archivo no encontrado "+e.getMessage());
         }catch(Exception e){
             System.out.println("Otra excepcion "+ e.getMessage());
         }
 
-        
+
+    }
+
+    public static void recuperarBase(){
+
     }
 }
