@@ -6,9 +6,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main (String []args){
-        //procedimiento();
-        llenarBase();
-        agregarUsuario();
+        procedimiento();
+
     }
 
     public static void procedimiento(){
@@ -19,9 +18,9 @@ public class Main {
         switch (seleccion){
             case 1: 
                 break;
-            case 2:
+            case 2: agregarUsuario();
                 break;
-            case 3:
+            case 3: consultarUsuario();
                 break;
             case 4:
                 break;
@@ -64,15 +63,7 @@ public class Main {
             int valor;
             char respuesta;
             do {
-                System.out.println("Escriba el nombre del nuevo usuario");
-                nombre = scanner.next();
-                System.out.println("Escriba el valor del nuevo usuario "+nombre);
-                valor = scanner.nextInt();
-                FileInputStream in = new FileInputStream("C:/Users/willi/Programacion/OpenBootcamp/Curso_javaBasico/clases/ejercicios2/src/consulta/basededatos.txt");
-                ObjectInputStream ois = new ObjectInputStream(in);
-                HashMap baserecuperada = (HashMap) ois.readObject();
-                baserecuperada.put(nombre, valor);
-
+                recuperarBase();
                 System.out.println("¿Desea agregar otro usuario?\n Escriba S/N");
                 respuesta = scanner.next().charAt(0);
                 switch (respuesta){
@@ -85,11 +76,10 @@ public class Main {
                     case 'n': salida = true;
                         break;
                 }
-            }while(salida = false);
 
-        }catch(IOException e){
-            System.out.println("Archivo no encontrado "+e.getMessage());
-        }catch(Exception e){
+            }while(salida == false);
+
+        } catch(Exception e){
             System.out.println("Otra excepcion "+ e.getMessage());
         }
 
@@ -97,6 +87,33 @@ public class Main {
     }
 
     public static void recuperarBase(){
+        Scanner scanner = new Scanner(System.in);
+        String nombre;
+        int valor;
+        char respuesta;
 
+        System.out.println("Escriba el nombre del nuevo usuario");
+        nombre = scanner.next();
+        System.out.println("Escriba el valor del nuevo usuario "+nombre);
+        valor = scanner.nextInt();
+        try {
+            FileInputStream in = new FileInputStream("C:/Users/willi/Programacion/OpenBootcamp/Curso_javaBasico/clases/ejercicios2/src/consulta/basededatos.txt");
+            ObjectInputStream ois = new ObjectInputStream(in);
+            HashMap baserecuperada = (HashMap) ois.readObject();
+            baserecuperada.put(nombre, valor);
+            System.out.println("Esta es la nueva base de datos");
+            System.out.println(baserecuperada);
+
+        }catch (Exception e){
+            System.out.println("Excepcion generada "+e.getMessage());
+        }
     }
+     public static void consultarUsuario(){
+
+     }
+
+     public static HashMap getBase(){
+
+         return null;
+     }
 }
