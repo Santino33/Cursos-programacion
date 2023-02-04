@@ -79,7 +79,7 @@ public class base {
         } catch(Exception e){
             System.out.println("Otra excepcion "+ e.getMessage());
         }
-
+        procedimiento();
 
     }
 
@@ -116,6 +116,7 @@ public class base {
             System.out.println("El saldo del usuario " + usuario + " es " + valor);
         }catch (Exception e){
             System.out.println("Se ha generado una excepcion: "+e.getMessage());
+            procedimiento();
         }
     }
 
@@ -129,6 +130,7 @@ public class base {
             actualizarBase(baserecuperada);
         }catch(Exception e){
             System.out.println("Usuario no encontrado"+e.getMessage());
+            procedimiento();
         }
     }
 
